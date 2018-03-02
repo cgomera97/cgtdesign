@@ -3,7 +3,7 @@
 
 html {
   box-sizing: border-box;
-	background-color: #FF9262;
+	background-color: #FF9769;
 	color: ghostwhite;
 	margin: 0 auto;
 }
@@ -11,27 +11,143 @@ html {
   box-sizing: inherit; 
 }
 
+a:link {
+	color: ghostwhite;
+	text-decoration: none;
+}
+a:visited {
+	color: ghostwhite;
+}
+a:hover {
+	color: ghostwhite;
+}
+
 /*------------ Title/Header -----------*/
 .title {
-	margin-top: 1em; 
+	position: fixed;
+	background-color: #FF9769;
+	z-index: 1;
+	width: 101%;
 	font-family: 'Sanchez', serif;
 	font-size: 130%;
+	margin-left: -1%;
+	margin-top: -.8em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: .03px solid ghostwhite;
+}
+.title2 {
+	background-color: white;
+	border-bottom: .03px solid lightgray;
+}
+.title3 {
+	background-color: #ACD6D6;
 }
 
 .home {
-	margin-left: 5%;
+	margin-left: 0%;
 }
+a.home:visited {
+	color:deepskyblue;
+	text-decoration: underline;
+}
+
 .project {
-	margin-left: 24%;
+	margin-left: 15%;
 }
 .contact {
-	margin-left: 11%;
+	margin-left: 16%;
 }
 
 
 
 
 /*---------------- Index --------------*/
+.navcurrent {
+	text-decoration: underline;
+}
+.book {
+	position: absolute;
+	height: 45em;
+	width: 35em;
+	margin-top: 4.5%;
+	margin-left: -1%;
+	background-image:url(images/plant.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.helloiam {
+	font-size: 340%;
+	font-family: 'Heebo', sans-serif;
+	font-style: bold;
+	line-height: 5% ;
+	margin: 25% 0% 0% 62%;
+	background-color: none;
+	border: none;
+}
+
+
+/*label animation*/
+.switch {
+	font-size: 340%;
+	font-family: 'Heebo', sans-serif;
+	font-style: bold;
+	line-height: 1 ;
+	position: absolute;
+	margin-top: 36.3%;
+	margin-left: 61%;
+	height: 1em;
+	width: 5em;
+	overflow: hidden;
+	border: solid .02em none
+}
+.designertxt {
+	margin-top: -.54%;
+	animation-name: switch;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes switch {
+	0%   {margin-top:-.54%;}
+  25%  {margin-top:-20.9%;}
+  50%  {margin-top:-37.8%;}
+  75%  {margin-top:-60.9%;}
+	100% {margin-top:-.54%;}
+}
+
+
+
+
+
+
+/*---------------- Projects --------------*/
+.gallery {
+	position: relative;
+	height: 18em;
+	margin-left: 4.5em;
+	margin-top: 10em;
+}
+.project1 {
+	background-image:url(images/books.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: top;
+}
+.project2 {
+	background-image:url(images/portrait.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+.project3 {
+	background-image:url(images/typeface.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
 
 
 
@@ -39,9 +155,28 @@ html {
 
 
 /*---------------- Contact --------------*/
-
-
-
+.headshot {
+	margin-top: 15em;
+	height: 18em;
+	background-image:url(images/headshot.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	position: relative;
+	z-index: -1;
+}
+.rotate {
+	transform: rotate(270deg);
+}
+.contact_info {
+	margin-top: 9em;
+	margin-left: -2em;
+	font-size: 200%;
+	font-family: 'Heebo', sans-serif;
+	font-style: bold;
+	line-height: 130% ;
+	z-index: 1;
+}
 
 /*<<<-----------GRID TEMPLATE------------>>>-*/
 
